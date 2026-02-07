@@ -1,0 +1,15 @@
+.scroll-navbar {
+    z-index: 999;
+}
+
+.scroll-navbar.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+}
+
+.scroll-navbar.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

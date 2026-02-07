@@ -2,9 +2,9 @@ import React from 'react'
 
 const Projects = () => {
     return (
-        <div>
-
-        </div>
+        <section id="projects" className="u-transition">
+            Projects
+        </section>
     )
 }
 

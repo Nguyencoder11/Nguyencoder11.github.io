@@ -1,0 +1,58 @@
+.common-home {
+    letter-spacing: 0.03em;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.common-home img {
+    max-width: 40px;
+}
+
+.common-menu li {
+    margin: 0 20px;
+}
+
+.common-menu li a {
+    font-weight: 600;
+    position: relative;
+    transition: color .3s ease;
+}
+
+.common-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--accent);
+    border-radius: 10px;
+    transition: width .3s ease-out;
+}
+
+.common-menu li a.active,
+.common-menu li a:hover {
+    color: var(--accent);
+}
+
+.common-menu li a.active::after,
+.common-menu li a:hover::after {
+    width: 100%;
+}
+
+.theme-toggle {
+    cursor: pointer;
+    line-height: 1;
+}
+
+.theme-toggle:hover .theme-icon {
+    color: var(--accent) !important;
+}
+
+.flag-section span {
+    cursor: pointer;
+}

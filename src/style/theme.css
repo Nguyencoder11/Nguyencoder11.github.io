@@ -1,0 +1,29 @@
+/* ===== LIGHT THEME (default) ===== */
+.light {
+    --bg-primary: #f4f4f4;
+    --bg-secondary: #fff;
+    /* --bg-third: ; */
+
+    --text-primary: #000;
+    --text-muted: #666;
+
+    --accent: #0077b7;
+    --accent-hover: #005f92;
+
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* ===== DARK THEME ===== */
+.dark {
+    --bg-primary: #151925;
+    --bg-secondary: #212532;
+    /* --bg-third: #2e3341; */
+
+    --text-primary: #fff;
+    --text-muted: #aaa;
+
+    --accent: #01EEFF;
+    --accent-hover: #00cbd9;
+
+    --box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.787);
+}

@@ -1,0 +1,39 @@
+.u-font-sen {
+    font-family: Sen, sans-serif;
+}
+
+.u-bg-primary {
+    background: var(--bg-primary);
+}
+
+.u-bg-secondary {
+    background: var(--bg-secondary);
+}
+
+.u-bg-third {
+    background: var(--bg-third);
+}
+
+.u-text-primary {
+    color: var(--text-primary);
+}
+
+.u-text-muted {
+    color: var(--text-muted);
+}
+
+.u-accent-text {
+    color: var(--accent);
+}
+
+.u-accent-background {
+    background: var(--accent);
+}
+
+.u-box-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+.u-transition {
+    transition: all .3s ease;
+}

@@ -1,10 +1,30 @@
+import React, { useState, useEffect } from 'react'
+import './ScrollNavbar.css'
 import { menuRoutes } from '../../constants/menuRoute'
 import handleScrollToTopAndCleanUrl from '../../utils/handleToTopUtil'
 
-const Navbar = ({ theme, toggleTheme }) => {
+const ScrollNavbar = ({ theme, toggleTheme }) => {
+    const [show, setShow] = useState(false)
+
+    const handleNavbarScroll = () => {
+        if (window.scrollY >= 400) {
+            setShow(true)
+        } else {
+            setShow(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleNavbarScroll)
+
+        // Cleanup Function
+        return () => {
+            window.removeEventListener('scroll', handleNavbarScroll)
+        }
+    }, [])
 
     return (
-        <header className="default-navbar u-transition py-4 px-5 w-100 u-bg-primary">
+        <header className={`scroll-navbar ${show ? 'visible' : 'hidden'} u-transition position-fixed u-box-shadow px-5 py-4 w-100 u-bg-primary`}>
             <div className="d-flex justify-content-between align-items-center">
                 <a className="common-home u-text-primary"
                     onClick={handleScrollToTopAndCleanUrl}
@@ -41,4 +61,4 @@ const Navbar = ({ theme, toggleTheme }) => {
     )
 }
 
-export default Navbar
+export default ScrollNavbar
