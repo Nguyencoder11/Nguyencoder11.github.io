@@ -6,7 +6,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     return (
         <header className="default-navbar u-transition py-4 px-5 w-100 u-bg-primary">
             <div className="d-flex justify-content-between align-items-center">
-                <a className="common-home u-text-primary"
+                <a className="common-home u-text-primary" href
                     onClick={handleScrollToTopAndCleanUrl}
                 >
                     <img src='/b63473da-4806-4458-a3dd-d03009605211.png' alt="Logo" />

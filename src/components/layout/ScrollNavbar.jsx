@@ -26,7 +26,7 @@ const ScrollNavbar = ({ theme, toggleTheme }) => {
     return (
         <header className={`scroll-navbar ${show ? 'visible' : 'hidden'} u-transition position-fixed u-box-shadow px-5 py-4 w-100 u-bg-primary`}>
             <div className="d-flex justify-content-between align-items-center">
-                <a className="common-home u-text-primary"
+                <a className="common-home u-text-primary" href
                     onClick={handleScrollToTopAndCleanUrl}
                 >
                     <img src='/b63473da-4806-4458-a3dd-d03009605211.png' alt="Logo" />
